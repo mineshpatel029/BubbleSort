@@ -1,0 +1,13 @@
+<div class="visualizer-container">
+  <div class="controls">
+    <button (click)="generateArray()">Generate Array</button>
+    <button (click)="sortArray()">Sort Array</button>
+    <label for="delay">Animation Delay (ms):</label>
+    <input type="range" id="delay" min="10" max="1000" [(ngModel)]="animationDelay">
+  </div>
+  <div class="array-container">
+    <div *ngFor="let value of array" class="array-bar" [style.height.px]="value">
+      <div class="array-value">{{ value }}</div>
+    </div>
+  </div>
+</div>
