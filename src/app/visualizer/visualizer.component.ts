@@ -1,4 +1,7 @@
+// src/app/visualizer.component.ts
+
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-visualizer',
@@ -9,11 +12,17 @@ export class VisualizerComponent {
   array: number[] = [];
   animationDelay: number = 100;
 
+  constructor(private http: HttpClient) {}
+
   generateArray() {
-    this.array = Array.from({ length: 50 }, () => Math.floor(Math.random() * 300) + 10);
+    this.array = Array.from({ length: 10 }, () => Math.floor(Math.random() * 300) + 10);
   }
 
   async sortArray() {
+
+    const generatedArray = [...this.array];
+
+ 
     for (let i = 0; i < this.array.length - 1; i++) {
       for (let j = 0; j < this.array.length - i - 1; j++) {
         if (this.array[j] > this.array[j + 1]) {
@@ -22,6 +31,17 @@ export class VisualizerComponent {
         }
       }
     }
+
+    // Save the original (generated) and sorted arrays
+    this.saveArrayData(generatedArray, this.array);
+  }
+
+  saveArrayData(generatedArray: number[], sortedArray: number[]) {
+    const url = 'http://localhost:8080/api/save-array';
+    this.http.post(url, { generatedArray, sortedArray }).subscribe(
+      (response) => console.log('Array data saved successfully:', response),
+      (error) => console.error('Failed to save array data:', error)
+    );
   }
 
   delay(ms: number) {

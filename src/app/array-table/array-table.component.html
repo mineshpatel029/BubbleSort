@@ -1,0 +1,19 @@
+<!-- src/app/array-table/array-table.component.html -->
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>#</th> <!-- Serial number column -->
+        <th>Generated Array</th>
+        <th>Sorted Array</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let arrayData of arrays; let i = index">
+        <td>{{ i + 1 }}</td> <!-- Serial number logic -->
+        <td>{{ arrayData.generatedArray.join(', ') }}</td>
+        <td>{{ arrayData.sortedArray.join(', ') }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

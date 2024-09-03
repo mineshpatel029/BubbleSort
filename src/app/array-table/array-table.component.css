@@ -1,0 +1,24 @@
+/* src/app/array-table/array-table.component.css */
+.table-container {
+  margin-top: 20px;
+  clear: both;
+
+
+}
+table {
+  font-size: 10px; /* Reduced font size */
+  width: 50%; /* Reduced table width */
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 4px; /* Reduced padding */
+}
+
+th {
+  background-color: #121111;
+  text-align: left;
+}
+/* src/app/array-table/array-table.component.css */
+
