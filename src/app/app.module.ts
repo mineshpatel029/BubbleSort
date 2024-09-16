@@ -7,13 +7,15 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { VisualizerComponent } from './visualizer/visualizer.component';
 import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { ArrayTableComponent } from './array-table/array-table.component';
+import { HistoryComponent } from './history/history.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     VisualizerComponent,
-    ArrayTableComponent
+    ArrayTableComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,

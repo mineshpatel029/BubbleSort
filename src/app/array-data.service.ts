@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ArrayDataService {
-  private apiUrl = 'http://localhost:8080/api/get-arrays';
+  private apiUrl = 'https://sort-backend-kcjg.onrender.com/api/get-arrays';
 
   constructor(private http: HttpClient) {}
 

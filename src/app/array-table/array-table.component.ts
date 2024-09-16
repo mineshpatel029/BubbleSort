@@ -1,4 +1,4 @@
-// src/app/array-table/array-table.component.ts
+
 import { Component, OnInit } from '@angular/core';
 import { ArrayDataService } from '../array-data.service';
 
