@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.css']
 })
+  
 export class LandingPageComponent {
   constructor(private router: Router) {}
 

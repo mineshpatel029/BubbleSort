@@ -1,9 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body, html {
   /* overflow: hidden; */
   height: 100%;
-  background: linear-gradient(135deg, #5ebebe, #434343);
-  color: #ffffff;
   width: 100%;
   margin: 0;
+}
+
+
+body {
+  @apply font-montserrat;
 }
