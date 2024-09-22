@@ -16,7 +16,7 @@ export class VisualizerComponent {
   constructor(private http: HttpClient,private router : Router) {}
 
   generateArray() {
-    this.array = Array.from({ length: 30 }, () => Math.floor(Math.random() * 300) + 10);
+    this.array = Array.from({ length: 30 }, () => Math.floor(Math.random() * 250) + 10);
   }
 
   async sortArray() {

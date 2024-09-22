@@ -8,8 +8,8 @@
     <input type="range" id="delay" min="10" max="100" [(ngModel)]="animationDelay">
   </div>
   <div class="array-container">
-    <div *ngFor="let value of array" class="array-bar" [style.height.px]="value">
-      <div class="array-value">{{ value }}</div>
+    <div *ngFor="let value of array" class="array-bar rounded-t-md w-7" [style.height.px]="value">
+      <div class="array-value text-black font-semibold text-md">{{ value }}</div>
     </div>
   </div>
 </div>
