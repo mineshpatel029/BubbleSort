@@ -1,4 +1,5 @@
 <div class="table-container">
+  <div class=""></div>
   <table>
     <thead>
       <tr>
@@ -10,8 +11,8 @@
     <tbody>
       <tr *ngFor="let arrayData of arrays; let i = index">
         <td>{{ i + 1 }}</td>
-        <td>{{ arrayData.generatedArray.join(', ') }}</td>
-        <td>{{ arrayData.sortedArray.join(', ') }}</td>
+        <td>{{ arrayData.generatedArray.join(", ") }}</td>
+        <td>{{ arrayData.sortedArray.join(", ") }}</td>
       </tr>
     </tbody>
   </table>

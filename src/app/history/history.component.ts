@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ArrayDataService } from '../array-data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-history',
   templateUrl: './history.component.html',
   styleUrls: ['./history.component.css']
 })
+
 export class HistoryComponent implements OnInit {
   // history: any[] = [];
 
@@ -28,12 +30,16 @@ export class HistoryComponent implements OnInit {
 
   arrays: any[] = [];
 
-  constructor(private arrayDataService: ArrayDataService) {}
+  constructor(private arrayDataService: ArrayDataService, private router: Router) {}
 
   ngOnInit(): void {
     this.arrayDataService.getArrays().subscribe(
       (data) => this.arrays = data,
       (error) => console.error('Failed to fetch array data:', error)
     );
+  }
+
+  goBack(): void {
+    this.router.navigate(['/visualizer']);
   }
 }

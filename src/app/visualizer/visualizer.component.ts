@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class VisualizerComponent {
   array: number[] = [];
-  animationDelay: number = 100;
+  animationDelay: number = 10;
 
   constructor(private http: HttpClient,private router : Router) {}
 
