@@ -8,7 +8,7 @@ import { VisualizerComponent } from './visualizer/visualizer.component';
 import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { ArrayTableComponent } from './array-table/array-table.component';
 import { HistoryComponent } from './history/history.component';
-
+import { NgxTypedWriterModule } from 'ngx-typed-writer'; 
 
 @NgModule({
   declarations: [
@@ -23,6 +23,7 @@ import { HistoryComponent } from './history/history.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    NgxTypedWriterModule 
   ],
   providers: [
     provideHttpClient(withFetch())
