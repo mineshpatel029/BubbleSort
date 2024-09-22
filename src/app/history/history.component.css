@@ -1,12 +1,12 @@
 
 .table-container {
-  margin-top: 20px;
   clear: both;
   display: flex;
   justify-content: center;
   align-items: center;
-
-
+  background-color: #000;
+  color: #ffffff;
+  height: 100vh;
 
 
 }

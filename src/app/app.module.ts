@@ -9,6 +9,7 @@ import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/
 import { ArrayTableComponent } from './array-table/array-table.component';
 import { HistoryComponent } from './history/history.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,7 @@ import { HistoryComponent } from './history/history.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     provideHttpClient(withFetch())
