@@ -4,7 +4,10 @@
     <button (click)="generateArray()">Generate Array</button>
     <button (click)="sortArray()">Sort Array</button>
     <button (click)="viewHistory()">View History</button>
+  </div>
+  <div class="flex gap-5 py-5">
     <label for="delay">Animation Delay ({{animationDelay}}ms):</label>
+    
     <input type="range" id="delay" min="10" max="100" [(ngModel)]="animationDelay">
   </div>
   <div class="array-container">
