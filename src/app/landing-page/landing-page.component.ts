@@ -8,7 +8,16 @@ import { Router } from '@angular/router';
 })
   
 export class LandingPageComponent {
-  // carouselItems: string[] = ['Item 1', 'Item 2', 'Item 3']; 
+  strings: string[] = [
+    'Bubble Sort is a fundamental sorting algorithm known for its simplicity and ease of implementation.',
+    'It operates by repeatedly stepping through the list to be sorted, comparing adjacent elements and swapping them if they are in the wrong order.',
+    'This process continues until no swaps are needed, indicating that the list is sorted.'
+  ];
+  
+  typeSpeed = 30;
+  backSpeed = 20; 
+  loop = true; 
+
   constructor(private router: Router) {}
 
   navigateToVisualizer() {

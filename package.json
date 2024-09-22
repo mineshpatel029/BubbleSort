@@ -24,6 +24,7 @@
     "@ngu/carousel": "^9.0.0",
     "bubble-sort-visualizer": "file:",
     "express": "^4.18.2",
+    "ngx-typed-writer": "^1.3.0",
     "rxjs": "~7.8.0",
     "t-writer.js": "^1.0.4",
     "tslib": "^2.3.0",
