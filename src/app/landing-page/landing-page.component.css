@@ -2,7 +2,7 @@
     white-space: nowrap;
     overflow: hidden;
     border-right: .15em solid #333;
-    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+    animation: typing 10s steps(40, end), blink-caret .75s step-end infinite;
 }
 
 @keyframes typing {
@@ -64,8 +64,8 @@ button:hover {
 }
 
 .max-h-96 {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .scroll-container {
@@ -82,8 +82,8 @@ button:hover {
 }
 
 .typewriter {
-    overflow: hidden; 
-    border-right: .15em solid orange; 
+    overflow: hidden;
+    border-right: .15em solid orange;
     white-space: nowrap;
     width: 100%;
 }
@@ -98,7 +98,7 @@ button:hover {
 }
 
 .typing:nth-child(3) {
-    animation-delay: 10s; 
+    animation-delay: 10s;
 }
 
 @keyframes typing {
@@ -113,5 +113,5 @@ button:hover {
 
 .typing:nth-child(2),
 .typing:nth-child(3) {
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
 }
